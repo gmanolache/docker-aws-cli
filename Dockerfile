@@ -14,5 +14,4 @@ RUN echo "**** install Python ****" && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
 
 
-
 CMD [ "/bin/sh" ]
