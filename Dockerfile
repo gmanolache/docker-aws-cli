@@ -1,10 +1,7 @@
-FROM alpine:latest
+FROM yobasystems/alpine-docker
 
 
 ENV PYTHONUNBUFFERED=1
-
-RUN apk add --update docker openrc
-RUN rc-update add docker boot
 
 RUN echo "**** install Python ****" && \
     apk add --no-cache python3 && \
